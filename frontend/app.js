@@ -36,8 +36,11 @@ document.getElementById('book-form')
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
-      ui.renderMessage('Please fill all the fields', 'error', 3000);
-    } else {
+      ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
+    }else if(contraseña !== confirmar_contraseña ){
+      ui.renderMessage('Para confirmar deben ser iguales las contraseñas', 'error', 3000);
+    } 
+    else {
       // Pass the new book to the UI
       ui.addANewBook(formData);
       ui.renderMessage('New Book Added Successfully', 'success', 2000);
