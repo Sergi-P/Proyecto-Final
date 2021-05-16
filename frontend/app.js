@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('book-form')
   .addEventListener('submit', function(e) {
 
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
-    const isbn = document.getElementById('isbn').value;
+    const nombre = document.getElementById('nombre').value;
+    const contraseña = document.getElementById('contraseña').value;
+    const confirmar_contraseña = document.getElementById('confirmar_contraseña').value;
     
-    const image = document.getElementById('image').files;
+    //const image = document.getElementById('image').files;
 
     const formData = new FormData();
-    formData.append('image', image[0]);
-    formData.append('title', title);
-    formData.append('author', author);
-    formData.append('isbn', isbn);
+    //formData.append('image', image[0]);
+    formData.append('nombre', nombre);
+    formData.append('contraseña', contraseña);
+    formData.append('confirmar_contraseña', confirmar_contraseña);
 
     // for(var pair of formData.entries()) {
     //   console.log(pair[0]+', '+pair[1]);
@@ -35,7 +35,7 @@ document.getElementById('book-form')
     const book = new Book(title, author, isbn);
 
     // Validating User Input
-    if (title === '' || author === '' || isbn === '') {
+    if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
       ui.renderMessage('Please fill all the fields', 'error', 3000);
     } else {
       // Pass the new book to the UI
