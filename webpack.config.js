@@ -4,6 +4,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const devMode = process.env.NODE_ENV !== 'production'
 
+
+module.exports={
+  entry: './index_.html'
+};
+
+/*
 module.exports = {
   entry: './frontend/app.js',
   mode: 'development',
@@ -39,4 +45,4 @@ module.exports = {
     })
   ],
   devtool: 'source-map'
-};
+};*/
