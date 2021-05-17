@@ -5,13 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
 
 
-module.exports={
-  entry: './index_.html'
-};
-
-/*
 module.exports = {
-  entry: './frontend/app.js',
+  entry: './index_.html',//'./frontend/app.js',
   mode: 'development',
   output: {
     path: path.join(__dirname, 'backend/public'),
@@ -45,4 +40,4 @@ module.exports = {
     })
   ],
   devtool: 'source-map'
-};*/
+};
