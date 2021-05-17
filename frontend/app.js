@@ -21,6 +21,7 @@ document.getElementById('book-form')
     const formData = new FormData();
     //formData.append('image', image[0]);
     formData.append('nombre', nombre);
+    formData.append('correo', correo);
     formData.append('contraseña', contraseña);
     formData.append('confirmar_contraseña', confirmar_contraseña);
 
@@ -37,13 +38,11 @@ document.getElementById('book-form')
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
       ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
-    }else if(contraseña !== confirmar_contraseña ){
-      ui.renderMessage('Para confirmar deben ser iguales las contraseñas', 'error', 3000);
     } 
     else {
       // Pass the new book to the UI
       ui.addANewBook(formData);
-      ui.renderMessage('New Book Added Successfully', 'success', 2000);
+      ui.renderMessage('Registrado correctamente', 'success', 2000);
     }
 
     e.preventDefault();
