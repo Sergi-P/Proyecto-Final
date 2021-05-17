@@ -13,13 +13,14 @@ document.getElementById('book-form')
   .addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
     const contraseña = document.getElementById('contraseña').value;
     const confirmar_contraseña = document.getElementById('confirmar_contraseña').value;
     
-    //const image = document.getElementById('image').files;
+   
 
     const formData = new FormData();
-    //formData.append('image', image[0]);
+   
     formData.append('nombre', nombre);
     formData.append('correo', correo);
     formData.append('contraseña', contraseña);
@@ -33,7 +34,7 @@ document.getElementById('book-form')
     const ui = new UI();
 
     // New Book Object
-    const book = new Book(title, author, isbn);
+    const book = new Book(nombre, correo, contraseña, confirmar_contraseña);
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
