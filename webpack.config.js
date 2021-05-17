@@ -6,7 +6,7 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: './index_.html',
-  mode: 'development',
+  mode: 'development'/*,
 
   module : {
     rules: [
@@ -18,7 +18,7 @@ module.exports = {
         ]
       }
     ]
-  }/*,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './frontend/index.html',
