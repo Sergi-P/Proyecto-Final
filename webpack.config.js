@@ -6,7 +6,8 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 
 module.exports = {
-  entry: './index_.html',//'./frontend/app.js',
+  entry: //'./index_.html',
+  './frontend/app.js',
   mode: 'development',
   output: {
     path: path.join(__dirname, 'backend/public'),
