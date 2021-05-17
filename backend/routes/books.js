@@ -12,8 +12,8 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    const { title, author, isbn } = req.body;
-    const imagePath = '/uploads/' + req.file.filename;
+    const { nombre, correo, contraseña, confirmar_contraseña } = req.body;
+  
     const newBook = new Book({nombre, correo, contraseña, confirmar_contraseña});
     console.log(newBook)
     await newBook.save();
