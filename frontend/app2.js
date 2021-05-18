@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 */
 
-document.getElementById('Registrar_comunidad-form')
-  .addEventListener('submit', function(e) {
+document.getElementById('Registrar_comunidad-form').addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('correo').value;
