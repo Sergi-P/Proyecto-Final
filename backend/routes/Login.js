@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
   
     const newLogin = new Login({nombre, correo, contraseña});
     console.log(newLogin)
-    await newBook.save();
+    await newLogin.save();
     res.json({'message': 'Login Saved'});
 });
 
