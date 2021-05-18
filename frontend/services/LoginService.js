@@ -4,13 +4,13 @@ class LoginService {
         this.URI = `/api/Login`;
     }
 
-    async getBooks() {
+    async getLogin() {
         const response = await fetch(this.URI);    
         const Login = await response.json();
         return Login;
     }
 
-    async postBook(Login) {
+    async postLogin(Login) {
         const res = await fetch(this.URI, {
             method: 'POST',
             body: Login
@@ -18,7 +18,7 @@ class LoginService {
         const data = await res.json();
     }
 
-    async deleteBook(LoginId) {
+    async deleteLogin(LoginId) {
         const res = await fetch(`${this.URI}/${LoginId}`, {
             headers: {
                 'Content-Type': 'application/json',

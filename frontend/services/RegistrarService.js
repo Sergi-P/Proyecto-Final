@@ -4,13 +4,13 @@ class RegistrarService {
         this.URI = `/api/Registrar`;
     }
 
-    async getBooks() {
+    async getRegistrar() {
         const response = await fetch(this.URI);    
         const Registrar = await response.json();
         return Registrar;
     }
 
-    async postBook(Registrar) {
+    async postRegistrar(Registrar) {
         const res = await fetch(this.URI, {
             method: 'POST',
             body: Registrar
@@ -18,7 +18,7 @@ class RegistrarService {
         const data = await res.json();
     }
 
-    async deleteBook(RegistrarId) {
+    async deleteRegistrar(RegistrarId) {
         const res = await fetch(`${this.URI}/${RegistrarId}`, {
             headers: {
                 'Content-Type': 'application/json',
