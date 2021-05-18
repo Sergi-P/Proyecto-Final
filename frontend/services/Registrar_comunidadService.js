@@ -4,13 +4,13 @@ class Registrar_comunidadService {
         this.URI = `/api/Registrar_comunidad`;
     }
 
-    async getBooks() {
+    async getRegistrar_comunidad() {
         const response = await fetch(this.URI);    
         const Registrar_comunidad = await response.json();
         return Registrar_comunidad;
     }
 
-    async postBook(Registrar_comunidad) {
+    async postRegistrar_comunidad(Registrar_comunidad) {
         const res = await fetch(this.URI, {
             method: 'POST',
             body: Registrar_comunidad
@@ -18,7 +18,7 @@ class Registrar_comunidadService {
         const data = await res.json();
     }
 
-    async deleteBook(Registrar_comunidadId) {
+    async deleteRegistrar_comunidad(Registrar_comunidadId) {
         const res = await fetch(`${this.URI}/${Registrar_comunidadId}`, {
             headers: {
                 'Content-Type': 'application/json',

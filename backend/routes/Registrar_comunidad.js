@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const Registrar_comunidad = await Registrar_comunidad.findByIdAndDelete(req.params.id);
-    res.json({message: 'Book Deleted'});
+    res.json({message: 'Registrar_comunidad Deleted'});
 });
 
 

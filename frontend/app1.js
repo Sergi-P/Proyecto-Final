@@ -5,11 +5,11 @@ import UI from './UI.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const ui = new UI();
-  ui.renderBooks();
+  ui.renderlogin();
 });
 
 
-document.getElementById('book-form')
+document.getElementById('login-form')
   .addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
@@ -42,18 +42,18 @@ document.getElementById('book-form')
     } 
     else {
       // Pass the new book to the UI
-      ui.addANewBook(formData);
+      ui.addANewlogin(formData);
       ui.renderMessage('Logeado correctamente', 'success', 2000);
     }
 
     e.preventDefault();
   });
 
-document.getElementById('books-cards')
+document.getElementById('login-cards')
   .addEventListener('click', e => {
     const ui = new UI();
     if (e.target.classList.contains('delete')) {
-      ui.deleteBook(e.target.getAttribute('_id'));
+      ui.deletelogin(e.target.getAttribute('_id'));
       ui.renderMessage('Cuenta Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();

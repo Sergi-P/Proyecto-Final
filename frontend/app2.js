@@ -1,15 +1,15 @@
 import "./styles/app2.css";
 
 import Registrar_comunidad from './models/Registrar_comunidad';
-import UI from './UI.js';
+import UI2 from './UI2.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const ui = new UI();
-  ui.renderBooks();
+  const ui2 = new UI2();
+  ui2.renderRegistrar_comunidad();
 });
 
 
-document.getElementById('book-form')
+document.getElementById('Registrar_comunidad-form')
   .addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
@@ -31,7 +31,7 @@ document.getElementById('book-form')
     // }
 
     // Instatiating the UI
-    const ui = new UI();
+    const ui2 = new UI2();
 
     // New Book Object
     const registrar_comunidad = new Registrar_comunidad(nombre, correo, contraseña, confirmar_contraseña);
@@ -42,19 +42,19 @@ document.getElementById('book-form')
     } 
     else {
       // Pass the new book to the UI
-      ui.addANewBook(formData);
-      ui.renderMessage('Registrado correctamente', 'success', 2000);
+      ui2.addANewRegistrar_comunidad(formData);
+      ui2.renderMessage('Registrado correctamente', 'success', 2000);
     }
 
     e.preventDefault();
   });
 
-document.getElementById('books-cards')
+document.getElementById('Registrar_comunidad-cards')
   .addEventListener('click', e => {
-    const ui = new UI();
+    const ui2 = new UI2();
     if (e.target.classList.contains('delete')) {
-      ui.deleteBook(e.target.getAttribute('_id'));
-      ui.renderMessage('Book Deleted Successfully', 'success', 3000);
+      ui2.deleteRegistrar_comunidad(e.target.getAttribute('_id'));
+      ui2.renderMessage('Registrar_comunidad Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();
   });

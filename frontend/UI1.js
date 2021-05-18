@@ -1,48 +1,48 @@
-import BookService from './services/BookService';
-const bookService = new BookService();
+import LoginService from './services/LoginService';
+const LoginService = new LoginService();
 
 import { format } from 'timeago.js';
 
 class UI {
 
-  async renderBooks() {
-    const books = await bookService.getBooks();
-    const booksCardContainer = document.getElementById('books-cards');
-    booksCardContainer.innerHTML = '';
-    books.forEach((book) => {
+  async renderLogin() {
+    const Login = await LoginService.getLogin();
+    const LoginCardContainer = document.getElementById('Login-cards');
+    LoginCardContainer.innerHTML = '';
+    Login.forEach((Login) => {
       const div = document.createElement('div');
       div.className = 'animated fadeInRight';
       div.innerHTML = `
       <div class="card m-2">
         <div class="row no-gutters">
             <div class="col-md-4">
-                <img src="${book.imagePath}" class="img-fluid" alt="">
+                <img src="${Login.imagePath}" class="img-fluid" alt="">
             </div>
             <div class="col-md-8">
                 <div class="card-block px-2">
-                    <h4 class="card-title">${book.nombre}</h4>
-                    <p class="card-text">${book.contraseña}</p>
-                    <a href="#" class="btn btn-danger delete" _id="${book._id}">X</a>
+                    <h4 class="card-title">${Login.nombre}</h4>
+                    <p class="card-text">${Login.contraseña}</p>
+                    <a href="#" class="btn btn-danger delete" _id="${Login._id}">X</a>
                 </div>
             </div>
         </div>
         <div class="card-footer w-100 text-muted">
-          ${format(book.created_at)}
+          ${format(Login.created_at)}
         </div>
       </div>
       `;
-      booksCardContainer.appendChild(div);
+      LoginCardContainer.appendChild(div);
     });
   }
 
-  async addANewBook(book) {
-    await bookService.postBook(book);
-    this.renderBooks();
-    this.clearBookForm();
+  async addANewLogin(Login) {
+    await LoginService.postLogin(Login);
+    this.renderLogin();
+    this.clearLoginForm();
   }
 
-  clearBookForm() {
-    document.getElementById('book-form').reset();
+  clearLoginForm() {
+    document.getElementById('Login-form').reset();
     document.getElementById('nombre').focus();
   }
 
@@ -55,17 +55,17 @@ class UI {
     div.appendChild(document.createTextNode(message));
     // Puting in the documnet
     const container = document.querySelector('.col-md-4');
-    const bookForm = document.querySelector('#book-form');
-    container.insertBefore(div, bookForm);
+    const LoginForm = document.querySelector('#Login-form');
+    container.insertBefore(div, LoginForm);
     // Removing the div after some secconds
     setTimeout(() => {
       document.querySelector('.message').remove();
     }, secondsToRemove);
   }
 
-  async deleteBook(bookId) {
-    await bookService.deleteBook(bookId);
-    this.renderBooks();
+  async deleteLogin(LoginId) {
+    await LoginService.deleteLogin(LoginId);
+    this.renderLogin();
   }
 
 }

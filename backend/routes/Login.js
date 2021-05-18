@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const Login = await Login.findByIdAndDelete(req.params.id);
-    res.json({message: 'Book Deleted'});
+    res.json({message: 'login Deleted'});
 });
 
 
