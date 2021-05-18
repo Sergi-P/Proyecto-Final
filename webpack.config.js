@@ -43,8 +43,12 @@ module.exports = {
       filename: 'index2.html',
       template: './frontend/index2.html',
       chunks: ['app2']
-    })
+    }),
+    new MiniCssExtractPlugin({
+    filename: "css/bundle.css"
+  })
   ],
+
   devtool: 'source-map'
 };
 /*
