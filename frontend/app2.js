@@ -2,12 +2,12 @@ import "./styles/app2.css";
 
 import Registrar_comunidad from './models/Registrar_comunidad';
 import UI2 from './UI2.js';
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
   const ui2 = new UI2();
   ui2.renderRegistrar_comunidad();
 });
-
+*/
 
 document.getElementById('Registrar_comunidad-form')
   .addEventListener('submit', function(e) {

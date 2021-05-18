@@ -2,15 +2,15 @@ import "./styles/app.css";
 
 import Registrar from './models/Registrar.js';
 import UI from './UI.js';
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
   const ui = new UI();
   ui.renderRegister();
 });
-
+*/
 
 document.getElementById('Registrar-form')
-  .addEventListener('submit', function(e) {
+.addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('correo').value;

@@ -2,12 +2,12 @@ import "./styles/app1.css";
 
 import Login from './models/Login.js';
 import UI1 from './UI1.js';
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
   const ui1 = new UI1();
   ui1.renderlogin();
 });
-
+*/
 
 document.getElementById('login-form')
   .addEventListener('submit', function(e) {
