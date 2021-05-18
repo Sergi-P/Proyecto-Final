@@ -34,7 +34,7 @@ document.getElementById('Registrar-form')
     const ui = new UI();
 
     // New Book Object
-    const Registrar = new Registrar(nombre, correo, contraseña, confirmar_contraseña);
+    const registrar = new Registrar(nombre, correo, contraseña, confirmar_contraseña);
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
