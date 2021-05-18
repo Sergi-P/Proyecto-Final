@@ -1,6 +1,6 @@
 import "./styles/app1.css";
 
-import Book from './models/Login.js';
+import Login from './models/Login.js';
 import UI from './UI.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,16 +34,16 @@ document.getElementById('book-form')
     const ui = new UI();
 
     // New Book Object
-    const book = new Book(nombre, correo, contraseña, confirmar_contraseña);
+    const login = new Login(nombre, correo, contraseña);
 
     // Validating User Input
-    if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
+    if (nombre === '' || contraseña === '' || correo === '') {
       ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
     } 
     else {
       // Pass the new book to the UI
       ui.addANewBook(formData);
-      ui.renderMessage('Registrado correctamente', 'success', 2000);
+      ui.renderMessage('Logeado correctamente', 'success', 2000);
     }
 
     e.preventDefault();
@@ -54,7 +54,7 @@ document.getElementById('books-cards')
     const ui = new UI();
     if (e.target.classList.contains('delete')) {
       ui.deleteBook(e.target.getAttribute('_id'));
-      ui.renderMessage('Book Deleted Successfully', 'success', 3000);
+      ui.renderMessage('Cuenta Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();
   });

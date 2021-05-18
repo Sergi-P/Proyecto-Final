@@ -1,6 +1,6 @@
 import "./styles/app2.css";
 
-import Book from './models/Registrar_comunidad';
+import Registrar_comunidad from './models/Registrar_comunidad';
 import UI from './UI.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,10 +34,10 @@ document.getElementById('book-form')
     const ui = new UI();
 
     // New Book Object
-    const book = new Book(nombre, correo, contraseña, confirmar_contraseña);
+    const registrar_comunidad = new Registrar_comunidad(nombre, correo, contraseña, confirmar_contraseña);
 
     // Validating User Input
-    if (nombre === '' || contraseña === '' || confirmar_contraseña === '') {
+    if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
       ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
     } 
     else {
