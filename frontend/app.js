@@ -34,7 +34,7 @@ document.getElementById('Registrar-form')
     const ui = new UI();
 
     // New Book Object
-    const registrar = new Registrar(nombre, correo, contraseña, confirmar_contraseña);
+    const Registrar = new Registrar(nombre, correo, contraseña, confirmar_contraseña);
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
@@ -48,7 +48,7 @@ document.getElementById('Registrar-form')
 
     e.preventDefault();
   });
-
+/*
 document.getElementById('Registrar-cards')
   .addEventListener('click', e => {
     const ui = new UI();
@@ -57,4 +57,4 @@ document.getElementById('Registrar-cards')
       ui.renderMessage('Registrar Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();
-  });
+  });*/

@@ -17,7 +17,7 @@ class RegistrarService {
         });
         const data = await res.json();
     }
-
+/*
     async deleteRegistrar(RegistrarId) {
         const res = await fetch(`${this.URI}/${RegistrarId}`, {
             headers: {
@@ -27,8 +27,7 @@ class RegistrarService {
         });
         const data = await res.json();
         console.log(data);
-    }
-
+    }*/
 }
 
 export default RegistrarService;

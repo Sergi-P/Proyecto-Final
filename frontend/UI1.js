@@ -4,7 +4,7 @@ const LoginService = new LoginService();
 import { format } from 'timeago.js';
 
 class UI1 {
-
+/*
   async renderLogin() {
     const Login = await LoginService.getLogin();
     const LoginCardContainer = document.getElementById('Login-cards');
@@ -33,7 +33,7 @@ class UI1 {
       `;
       LoginCardContainer.appendChild(div);
     });
-  }
+  }*/
 
   async addANewLogin(Login) {
     await LoginService.postLogin(Login);
@@ -62,12 +62,12 @@ class UI1 {
       document.querySelector('.message').remove();
     }, secondsToRemove);
   }
-
+/*
   async deleteLogin(LoginId) {
     await LoginService.deleteLogin(LoginId);
     this.renderLogin();
   }
-
+*/
 }
 
 export default UI1;

@@ -48,7 +48,7 @@ document.getElementById('Registrar_comunidad-form')
 
     e.preventDefault();
   });
-
+/*
 document.getElementById('Registrar_comunidad-cards')
   .addEventListener('click', e => {
     const ui2 = new UI2();
@@ -57,4 +57,4 @@ document.getElementById('Registrar_comunidad-cards')
       ui2.renderMessage('Registrar_comunidad Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();
-  });
+  });*/

@@ -34,7 +34,7 @@ document.getElementById('login-form')
     const ui1 = new UI1();
 
     // New Book Object
-    const login = new Login(nombre, correo, contraseña);
+    const Login = new Login(nombre, correo, contraseña);
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || correo === '') {
@@ -48,7 +48,7 @@ document.getElementById('login-form')
 
     e.preventDefault();
   });
-
+/*
 document.getElementById('login-cards')
   .addEventListener('click', e => {
     const ui1 = new UI1();
@@ -57,4 +57,4 @@ document.getElementById('login-cards')
       ui1.renderMessage('Cuenta Deleted Successfully', 'success', 3000);
     }
     e.preventDefault();
-  });
+  });*/

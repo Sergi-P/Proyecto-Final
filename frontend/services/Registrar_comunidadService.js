@@ -17,7 +17,7 @@ class Registrar_comunidadService {
         });
         const data = await res.json();
     }
-
+/*
     async deleteRegistrar_comunidad(Registrar_comunidadId) {
         const res = await fetch(`${this.URI}/${Registrar_comunidadId}`, {
             headers: {
@@ -28,7 +28,7 @@ class Registrar_comunidadService {
         const data = await res.json();
         console.log(data);
     }
-
+*/
 }
 
 export default Registrar_comunidadService;

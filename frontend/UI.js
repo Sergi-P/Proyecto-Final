@@ -4,7 +4,7 @@ const RegistrarService = new RegistrarService();
 import { format } from 'timeago.js';
 
 class UI {
-
+/*
   async renderRegister() {
     const Registrar = await RegistrarService.getRegistrar();
     const RegistrarCardContainer = document.getElementById('Registrar-cards');
@@ -33,7 +33,7 @@ class UI {
       `;
       RegistrarCardContainer.appendChild(div);
     });
-  }
+  }*/
 
   async addANewRegistrar(Registrar) {
     await RegistrarService.postRegistrar(Registrar);
@@ -62,12 +62,12 @@ class UI {
       document.querySelector('.message').remove();
     }, secondsToRemove);
   }
-
+/*
   async deleteRegistrar(RegistrarId) {
     await RegistrarService.deleteRegistrar(RegistrarId);
     this.renderRegistrar();
   }
-
+*/
 }
 
 export default UI;

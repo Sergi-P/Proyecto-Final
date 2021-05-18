@@ -17,7 +17,7 @@ class LoginService {
         });
         const data = await res.json();
     }
-
+/*
     async deleteLogin(LoginId) {
         const res = await fetch(`${this.URI}/${LoginId}`, {
             headers: {
@@ -28,7 +28,7 @@ class LoginService {
         const data = await res.json();
         console.log(data);
     }
-
+*/
 }
 
 export default LoginService;

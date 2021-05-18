@@ -4,7 +4,7 @@ const Registrar_comunidadService = new Registrar_comunidadService();
 import { format } from 'timeago.js';
 
 class UI2 {
-
+/*
   async renderRegistrar_comunidad() {
     const Registrar_comunidad = await Registrar_comunidadService.getRegistrar_comunidad();
     const Registrar_comunidadCardContainer = document.getElementById('Registrar_comunidad-cards');
@@ -33,7 +33,7 @@ class UI2 {
       `;
       Registrar_comunidadCardContainer.appendChild(div);
     });
-  }
+  }*/
 
   async addANewRegistrar_comunidad(Registrar_comunidad) {
     await Registrar_comunidadService.postRegistrar_comunidad(Registrar_comunidad);
@@ -63,12 +63,12 @@ class UI2 {
     }, secondsToRemove);
   }
 
-
+/*
   async deleteRegistrar_comunidad(Registrar_comunidadId) {
     await Registrar_comunidadService.deleteRegistrar_comunidad(Registrar_comunidadId);
     this.renderRegistrar_comunidad();
   }
-
+*/
 }
 
 export default UI2;
