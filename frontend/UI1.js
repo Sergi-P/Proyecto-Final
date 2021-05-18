@@ -1,8 +1,8 @@
 import LoginService from './services/LoginService';
 const LoginService = new LoginService();
-
+/*
 import { format } from 'timeago.js';
-
+*/
 class UI1 {
 /*
   async renderLogin() {

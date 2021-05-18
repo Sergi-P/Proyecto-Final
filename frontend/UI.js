@@ -1,8 +1,8 @@
 import RegistrarService from './services/RegistrarService';
 const RegistrarService = new RegistrarService();
-
+/*
 import { format } from 'timeago.js';
-
+*/
 class UI {
 /*
   async renderRegister() {

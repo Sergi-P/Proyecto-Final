@@ -1,8 +1,9 @@
 import Registrar_comunidadService from './services/Registrar_comunidadService';
 const Registrar_comunidadService = new Registrar_comunidadService();
 
+/*
 import { format } from 'timeago.js';
-
+*/
 class UI2 {
 /*
   async renderRegistrar_comunidad() {
