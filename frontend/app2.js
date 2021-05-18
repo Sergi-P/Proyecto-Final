@@ -1,6 +1,6 @@
 import "./styles/app2.css";
 
-import Book from './models/Book.js';
+import Book from './models/Registrar_comunidad';
 import UI from './UI.js';
 
 document.addEventListener('DOMContentLoaded', () => {

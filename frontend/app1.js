@@ -1,6 +1,6 @@
 import "./styles/app1.css";
 
-import Book from './models/Book.js';
+import Book from './models/Login.js';
 import UI from './UI.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +15,7 @@ document.getElementById('book-form')
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('correo').value;
     const contraseña = document.getElementById('contraseña').value;
-    const confirmar_contraseña = document.getElementById('confirmar_contraseña').value;
+
     
    
 
@@ -24,7 +24,7 @@ document.getElementById('book-form')
     formData.append('nombre', nombre);
     formData.append('correo', correo);
     formData.append('contraseña', contraseña);
-    formData.append('confirmar_contraseña', confirmar_contraseña);
+   
 
     // for(var pair of formData.entries()) {
     //   console.log(pair[0]+', '+pair[1]);

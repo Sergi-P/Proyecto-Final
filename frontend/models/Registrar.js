@@ -1,4 +1,4 @@
-class Book {
+class Registrar {
   constructor(nombre, correo, contraseña, confirmar_contraseña) {
     this.nombre = nombre;
     this.correo = correo;
@@ -7,4 +7,4 @@ class Book {
   }
 }
 
-export default Book;
+export default Registrar;
