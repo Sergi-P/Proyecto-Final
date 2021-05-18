@@ -32,12 +32,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './index_.html',
+      template: './index.html',
       chunks: []
     }),
     new HtmlWebpackPlugin({
       filename: 'index3.html',
-      template: './frontend/index.html',
+      template: './frontend/index3.html',
       chunks: ['app']
     }),
     new HtmlWebpackPlugin({
