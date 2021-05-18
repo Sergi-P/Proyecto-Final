@@ -1,5 +1,5 @@
 import RegistrarService from './services/RegistrarService';
-const RegistrarService = new RegistrarService();
+const RegistrarServ = new RegistrarService();
 /*
 import { format } from 'timeago.js';
 */
@@ -36,7 +36,7 @@ class UI {
   }*/
 
   async addANewRegistrar(Registrar) {
-    await RegistrarService.postRegistrar(Registrar);
+    await RegistrarServ.postRegistrar(Registrar);
     this.renderRegistrar();
     this.clearRegistrarForm();
   }
@@ -66,8 +66,7 @@ class UI {
   async deleteRegistrar(RegistrarId) {
     await RegistrarService.deleteRegistrar(RegistrarId);
     this.renderRegistrar();
-  }
-*/
+  }*/
 }
 
 export default UI;

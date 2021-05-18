@@ -1,5 +1,5 @@
 import LoginService from './services/LoginService';
-const LoginService = new LoginService();
+const LoginServ = new LoginService();
 /*
 import { format } from 'timeago.js';
 */
@@ -36,7 +36,7 @@ class UI1 {
   }*/
 
   async addANewLogin(Login) {
-    await LoginService.postLogin(Login);
+    await LoginServ.postLogin(Login);
     this.renderLogin();
     this.clearLoginForm();
   }
@@ -66,8 +66,7 @@ class UI1 {
   async deleteLogin(LoginId) {
     await LoginService.deleteLogin(LoginId);
     this.renderLogin();
-  }
-*/
+  }*/
 }
 
 export default UI1;

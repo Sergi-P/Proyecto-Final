@@ -1,5 +1,5 @@
 import Registrar_comunidadService from './services/Registrar_comunidadService';
-const Registrar_comunidadService = new Registrar_comunidadService();
+const Registrar_comunidadServ = new Registrar_comunidadService();
 
 /*
 import { format } from 'timeago.js';
@@ -37,7 +37,7 @@ class UI2 {
   }*/
 
   async addANewRegistrar_comunidad(Registrar_comunidad) {
-    await Registrar_comunidadService.postRegistrar_comunidad(Registrar_comunidad);
+    await Registrar_comunidadServ.postRegistrar_comunidad(Registrar_comunidad);
     this.renderRegistrar_comunidad();
     this.clearRegistrar_comunidadForm();
   }
@@ -68,8 +68,7 @@ class UI2 {
   async deleteRegistrar_comunidad(Registrar_comunidadId) {
     await Registrar_comunidadService.deleteRegistrar_comunidad(Registrar_comunidadId);
     this.renderRegistrar_comunidad();
-  }
-*/
+  }*/
 }
 
 export default UI2;
