@@ -16,7 +16,7 @@ module.exports = {
   mode: 'development',
   output: {
     path: path.join(__dirname, 'backend/public'),
-    filename: 'js/bundle.js'
+    filename: 'js/ [name] .js'
   },
   module : {
     rules: [
