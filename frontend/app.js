@@ -1,5 +1,5 @@
 import "./styles/app.css";
-book
+
 import Registrar from './models/Registrar.js';
 import UI from './UI.js';
 
@@ -17,7 +17,6 @@ document.getElementById('Registrar-form')
     const contraseña = document.getElementById('contraseña').value;
     const confirmar_contraseña = document.getElementById('confirmar_contraseña').value;
     
-   
 
     const formData = new FormData();
    
