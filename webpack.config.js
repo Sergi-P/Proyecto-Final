@@ -5,6 +5,49 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
 
 
+
+
+module.exports = {
+  entry: {
+    app:'./frontend/app.js',
+    app1:'./frontend/app1.js',
+    app2:'./frontend/app2.js',
+  },
+  mode: 'development',
+  output: {
+    path: path.join(__dirname, 'backend/public'),
+    filename: 'js/bundle.js'
+  },
+  module : {
+    rules: [
+      {
+        test: /\.css/,
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './frontend/index.html',
+      chunks: ['app']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index1.html',
+      template: './frontend/index1.html',
+      chunks: ['app1']
+    }),new HtmlWebpackPlugin({
+      filename: 'index2.html',
+      template: './frontend/index2.html',
+      chunks: ['app2']
+    })
+  ],
+  devtool: 'source-map'
+};
+/*
 module.exports = {
   entry: './frontend/app.js',
   mode: 'development',
@@ -40,4 +83,4 @@ module.exports = {
     })
   ],
   devtool: 'source-map'
-};
+};*/
