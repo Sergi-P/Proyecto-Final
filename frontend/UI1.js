@@ -3,7 +3,7 @@ const LoginService = new LoginService();
 
 import { format } from 'timeago.js';
 
-class UI {
+class UI1 {
 
   async renderLogin() {
     const Login = await LoginService.getLogin();
@@ -70,4 +70,4 @@ class UI {
 
 }
 
-export default UI;
+export default UI1;

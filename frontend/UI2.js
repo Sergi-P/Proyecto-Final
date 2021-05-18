@@ -63,6 +63,7 @@ class UI2 {
     }, secondsToRemove);
   }
 
+
   async deleteRegistrar_comunidad(Registrar_comunidadId) {
     await Registrar_comunidadService.deleteRegistrar_comunidad(Registrar_comunidadId);
     this.renderRegistrar_comunidad();

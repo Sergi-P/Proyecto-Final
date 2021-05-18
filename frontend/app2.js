@@ -38,7 +38,7 @@ document.getElementById('Registrar_comunidad-form')
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
-      ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
+      ui2.renderMessage('Rellena todos los recuadros', 'error', 3000);
     } 
     else {
       // Pass the new book to the UI
