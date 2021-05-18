@@ -22,7 +22,6 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const Registrar_comunidad = await Registrar_comunidad.findByIdAndDelete(req.params.id);
-    await unlink(path.resolve('./backend/public/' + Registrar_comunidad.imagePath));
     res.json({message: 'Book Deleted'});
 });
 

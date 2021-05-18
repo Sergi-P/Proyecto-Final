@@ -22,7 +22,6 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     const Registrar = await Registrar.findByIdAndDelete(req.params.id);
-    await unlink(path.resolve('./backend/public/' + Registrar.imagePath));
     res.json({message: 'Book Deleted'});
 });
 

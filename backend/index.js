@@ -29,13 +29,12 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 // routes
-app.use('/api/Registrar', require('./routes/books'));
-app1.use('/api/Login', require( './routes/books' ) );
-app2.use('/api/Registrar_comunidad', require('./routes/books'));
+app.use('/api/Registrar', require('./routes/Registrar'));
+app1.use('/api/Login', require( './routes/Login' ) );
+app2.use('/api/Registrar_comunidad', require('./routes/Registrar_comunidad'));
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
-
 // start the server
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
-});
+} );
