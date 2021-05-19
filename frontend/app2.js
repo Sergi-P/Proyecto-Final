@@ -32,7 +32,8 @@ document.getElementById('Registrar_comunidad-form').addEventListener('submit', f
     const ui2 = new UI2();
 
     // New Book Object
-    //const registrar_comunidad = new Registrar_comunidad(nombre, correo, contraseña, confirmar_contraseña);
+    //const registrar_comunidad = 
+    new Registrar_comunidad(nombre, correo, contraseña, confirmar_contraseña);
 
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
