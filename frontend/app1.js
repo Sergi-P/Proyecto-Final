@@ -1,4 +1,4 @@
-import "frontend/styles/app.css";
+import "./styles/app.css";
 
 import Login from './models/Login.js';
 import UI1 from './UI1.js';

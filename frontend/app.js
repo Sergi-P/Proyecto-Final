@@ -1,4 +1,4 @@
-import "frontend/styles/app.css";
+import "./styles/app.css";
 
 import Registrar from './models/Registrar.js';
 import UI from './UI.js';
