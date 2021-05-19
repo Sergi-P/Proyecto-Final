@@ -1,0 +1,5 @@
+body, button{
+    padding-top: 65px;
+  position: relative;
+  z-index: 30;
+}
