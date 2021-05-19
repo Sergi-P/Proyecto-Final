@@ -1,4 +1,4 @@
-import "./styles/app.css";
+import "frontend/styles/app.css";
 
 import Registrar_comunidad from './models/Registrar_comunidad';
 import UI2 from './UI2.js';
