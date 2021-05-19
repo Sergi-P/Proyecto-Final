@@ -1,5 +1,8 @@
 body, button{
     padding-top: 65px;
-  position: relative;
-  z-index: 30;
+    position: relative;
+    z-index: 30;
+    border: solid 1px #a62a01;
+
+
 }
