@@ -55,7 +55,9 @@ h1 {
 img, video {
   max-width: 100%;
 }
-
+p{
+  color: black;
+}
 @media(min-width: 480px) {
   .container {
     max-width: var(--content-max-width);
