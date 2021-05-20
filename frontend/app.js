@@ -40,7 +40,7 @@ document.getElementById('Registrar-form').addEventListener('submit', function(e)
       ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
     }
     else if ( contraseña != confirmar_contraseña ){
-      ui2.renderMessage('Las contraseñas no coinciden', 'error', 3000);
+      ui.renderMessage('Las contraseñas no coinciden', 'error', 3000);
 
   }
     else {
