@@ -4,6 +4,7 @@
 }
 
 body {
+ background-image: url("fondo.jfif");
   background-color: var(--dark-color);
 }
 

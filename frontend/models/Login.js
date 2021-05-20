@@ -3,7 +3,7 @@ class Login {
     this.nombre = nombre;
     this.correo = correo;
     this.contraseña = contraseña;
-    
+ 
   }
 }
 
