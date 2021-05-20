@@ -35,7 +35,6 @@ app.use('/api/Registrar_comunidad', require('./routes/Registrar_comunidad'));
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '../frontend')));
-app.use(express.static(path.join(__dirname, '../frontend')));
 // start the server
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
