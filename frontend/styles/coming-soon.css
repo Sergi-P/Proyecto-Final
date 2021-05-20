@@ -4,8 +4,7 @@
 }
 
 body {
- background-image: url("fondo.jfif");
-  background-color: var(--dark-color);
+ background-color: rgb(0, 74, 158);
 }
 
 .logo {

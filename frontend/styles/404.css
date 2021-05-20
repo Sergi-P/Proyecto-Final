@@ -1,6 +1,9 @@
 * {
   font-family: 'Cairo', Arial, Helvetica, sans-serif;
 }
+body{
+   background-color: rgb(0, 74, 158);
+}
 
 .wrapper {
   height: 100vh;
