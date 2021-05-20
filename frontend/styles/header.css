@@ -63,8 +63,7 @@
   margin: 60% -2rem 0 -2rem;
   background-color: rgba(255, 255, 255, 0.25);
   padding: 2rem 2rem;
-  text-shadow: black 2px 2px 2px;
-}
+  /*text-shadow: black 2px 2px 2px;*/}
 
 @media all and (orientation: landscape) and (max-height: 479px) {
   .header-content .promo-text {
