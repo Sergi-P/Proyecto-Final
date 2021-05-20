@@ -41,7 +41,6 @@ document.getElementById('Registrar-form').addEventListener('submit', function(e)
     }
     else if ( contraseña != confirmar_contraseña ){
       ui.renderMessage('Las contraseñas no coinciden', 'error', 3000);
-
   }
     else {
       // Pass the new book to the UI
