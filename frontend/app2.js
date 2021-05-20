@@ -38,7 +38,11 @@ document.getElementById('Registrar_comunidad-form').addEventListener('submit', f
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
       ui2.renderMessage('Rellena todos los recuadros', 'error', 3000);
-    } 
+    }
+    else if ( contraseña != confirmar_contraseña){
+      ui2.renderMessage('Las contraseñas no coinciden', 'error', 3000);
+
+  }
     else {
       // Pass the new book to the UI
       ui2.addANewRegistrar_comunidad(formData);
