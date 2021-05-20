@@ -38,7 +38,11 @@ document.getElementById('Registrar-form').addEventListener('submit', function(e)
     // Validating User Input
     if (nombre === '' || contraseña === '' || confirmar_contraseña === ''|| correo === '') {
       ui.renderMessage('Rellena todos los recuadros', 'error', 3000);
-    } 
+    }
+    else if ( contraseña != confirmar_contraseña ){
+      ui2.renderMessage('Las contraseñas no coinciden', 'error', 3000);
+
+  }
     else {
       // Pass the new book to the UI
       ui.addANewRegistrar(formData);
