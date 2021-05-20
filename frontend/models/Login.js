@@ -1,6 +1,6 @@
 class Login {
-  constructor(nombre, correo, contraseña) {
-    this.nombre = nombre;
+  constructor(correo, contraseña) {
+ 
     this.correo = correo;
     this.contraseña = contraseña;
  

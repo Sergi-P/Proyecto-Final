@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const { nombre, correo, contraseña} = req.body;
-    const newLogin = new Login({nombre, correo, contraseña});
+    const newLogin = new Login({ correo, contraseña});
     console.log(newLogin)
     await newLogin.save();
     res.json({'message': 'Login Saved'});

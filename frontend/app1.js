@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('Login-form').addEventListener('submit', function(e) {
 
-    const nombre = document.getElementById('nombre').value;
+    
     const correo = document.getElementById('correo').value;
     const contraseña = document.getElementById('contraseña').value;
 
@@ -20,7 +20,7 @@ document.getElementById('Login-form').addEventListener('submit', function(e) {
 
     const formData = new FormData();
    
-    formData.append('nombre', nombre);
+    
     formData.append('correo', correo);
     formData.append('contraseña', contraseña);
    
@@ -34,10 +34,10 @@ document.getElementById('Login-form').addEventListener('submit', function(e) {
 
     // New Book Object
     //const login = 
-    new Login(nombre, correo, contraseña);
+    new Login(correo, contraseña);
 
     // Validating User Input
-    if (nombre === '' || contraseña === '' || correo === '') {
+    if ( contraseña === '' || correo === '') {
       ui1.renderMessage('Rellena todos los recuadros', 'error', 3000);
     } 
     else {
